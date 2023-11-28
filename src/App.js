@@ -6,7 +6,7 @@ import Navbar from "./components/Pages/Navbar";
 function App() {
   return (
     <div className="bg-black w-[100%] h-screen">
-      <Navbar></Navbar>
+      <MainPage />
     </div>
   );
 }
