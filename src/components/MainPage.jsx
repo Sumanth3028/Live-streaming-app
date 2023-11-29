@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "./Pages/Navbar";
 import SearchBar from "./Pages/SearchBar";
 
 const MainPage = () => {
+  const ref = useRef();
   return (
     <div className="flex">
       <div>
-        <Navbar />
+        <Navbar ref={ref} />
       </div>
-      <div className="h-screen border w-0 bg-yellow-300"></div>
+      <div className="min-h-screen border ml-8 w-0 opacity-20 "></div>
       <div>
-        <SearchBar />
+        <SearchBar ref={ref} />
       </div>
     </div>
   );
